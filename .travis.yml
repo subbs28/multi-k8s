@@ -20,7 +20,7 @@ before_install:
 script:
   - docker run -e CI=true subbs28/react-test npm test -- --coverage
 
-deploy:
+deploy: 
   provider: script
   script: bash ./deploy.sh
   on:
